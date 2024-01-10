@@ -1,0 +1,14 @@
+class Solution:
+    def finalValueAfterOperations(self, operations: List[str]) -> int:
+        result = 0
+        for i in operations:
+            if i in {'X++', '++X'}:
+                result = result + 1
+            elif i in {'X--', '--X'}:
+                result = result - 1
+        return result
+
+            
+
+
+        
