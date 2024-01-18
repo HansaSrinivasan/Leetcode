@@ -1,0 +1,8 @@
+class Solution:
+    def numberOfEmployeesWhoMetTarget(self, hours: List[int], target: int) -> int:
+        h = []
+        for i in range(len(hours)):
+            if (i > target or i == target):
+                h.append(i)
+        totemp = len(h)
+        return totemp
