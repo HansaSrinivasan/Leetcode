@@ -1,0 +1,5 @@
+class Solution:
+    def interpret(self, command: str) -> str:
+        for i in range(len(command)):
+            goal_parser =  command.replace('()','o').replace('(al)','al')
+        return goal_parser
