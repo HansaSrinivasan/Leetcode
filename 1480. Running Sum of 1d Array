@@ -1,0 +1,8 @@
+class Solution:
+    def runningSum(self, nums: List[int]) -> List[int]:
+        runningsum = []
+        y = 0
+        for i in range(len(nums)):
+            y = y + nums[i]
+            runningsum.append(y)
+        return runningsum
