@@ -1,0 +1,16 @@
+class Solution:
+    def plusOne(self, digits):
+        strings = ""
+        for i in digits:
+            strings += str(i)
+
+        result = str(int(strings) +1)
+
+        return [int(result[i]) for i in range(len(result))]
+        
+
+            
+
+
+
+        
